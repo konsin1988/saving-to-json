@@ -1,0 +1,63 @@
+.container {
+  @extend %flexCenter;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(90deg, #6aacb9, #2470bf);
+  .table {
+    position: relative;
+    margin-top: 50px;
+    height: 400px;
+    width: 800px;
+    background: $bgColor;
+    padding-top: 10px;
+
+    .item {
+      width: 90%;
+      margin: 0 120px;
+      padding: 5px;
+      input {
+        padding: 3px;
+      }
+      button {
+        position: relative;
+        background: $btnColor;
+        border: none;
+        color: #fff;
+
+        i {
+          margin: 3px;
+        }
+      }
+    }
+    .add-panel {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      margin-bottom: 10px;
+      @extend %flexCenter;
+      width: 40%;
+      button {
+        padding: 5px 10px;
+        margin: 7px;
+        font-size: 1em;
+        background: $btnColor;
+        color: #fff;
+        border: none;
+      }
+    }
+  }
+
+  .display-json {
+    margin-bottom: 50px;
+    width: 800px;
+    height: 150px;
+    background: $bgColor;
+    padding: 15px 30px;
+  }
+}
+
+.item {
+  display: none;
+}

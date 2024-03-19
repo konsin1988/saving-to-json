@@ -1,15 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="discription" content="content">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="discription" content="content" />
     <title>List</title>
     <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.5.1-web/css/all.min.css"
+    />
     <script src="./js/main.js" defer></script>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <section class="container">
+      <div class="table">
+        <div class="items">
+          <div class="item">
+            <input type="text" class="key-input" />
+            <input type="text" class="value-input" />
+            <button type="button" class="up-button">
+              <i data-type="icon" class="fa-solid fa-arrow-up"></i>
+            </button>
+            <button type="button" class="down-button">
+              <i data-type="icon" class="fa-solid fa-arrow-down"></i>
+            </button>
+            <button type="button" class="delete-button">
+              <i data-type="icon" class="fa-solid fa-trash"></i>
+            </button>
+          </div>
+        </div>
+        <div class="add-panel">
+          <button type="button" class="add-button">Add Element</button>
+          <button type="button" class="save">Save to json</button>
+        </div>
+      </div>
+      <div class="display-json">
+        <div class="data-json"></div>
+      </div>
+    </section>
+  </body>
 </html>
